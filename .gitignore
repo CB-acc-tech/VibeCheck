@@ -1,0 +1,12 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+# Ignore local environment files (Gemini API key, secrets)
+# Keep .env.example tracked so others see required vars
+.env
+.env.local

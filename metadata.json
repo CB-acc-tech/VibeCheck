@@ -1,0 +1,6 @@
+{
+  "name": "VibeCheck",
+  "description": "An AI-powered 'Vibe-Based' Movie Recommender that suggests movies based on highly specific, obscure moods.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

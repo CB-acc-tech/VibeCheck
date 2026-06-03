@@ -1,0 +1,14 @@
+# Render service configuration for automatic deploys
+services:
+  - type: web
+    name: vibecheck
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: "npm ci && npm run build"
+    startCommand: "npm start"
+    envVars:
+      - key: GEMINI_API_KEY
+        fromSecret: GEMINI_API_KEY
+    healthCheckPath: "/api/recommend"
+    instanceType: starter
